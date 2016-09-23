@@ -15,7 +15,7 @@ public class conectar {
             Class.forName("com.mysql.jdbc.Driver");
  //           conexion = DriverManager.getConnection("jdbc:mysql://localhost/bdconsultorio?useServerPrepStmts=true","root", "");
 
-           conexion=DriverManager.getConnection("jdbc:mysql://localhost/lala","root","");
+           conexion=DriverManager.getConnection("jdbc:mysql://localhost/lala","root","200896");
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }

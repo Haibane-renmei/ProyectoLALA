@@ -14,6 +14,7 @@ public class Usuario {
     private String nombre;
     private String clave;
     private int app;
+    private int id;
 
     public Usuario(String usuario, String nombre, String clave, int app) {
         this.usuario = usuario;
@@ -22,8 +23,20 @@ public class Usuario {
         this.app = app;
     }
 
+       public Usuario(String usuario, String nombre, String clave, int app, int id) {
+        this.id = id;
+        this.usuario = usuario;
+        this.nombre = nombre;
+        this.clave = clave;
+        this.app = app;
+    }
+       
     public String getUsuario() {
         return usuario;
+    }
+    
+    public int getID() {
+        return id;
     }
 
     public void setUsuario(String usuario) {
